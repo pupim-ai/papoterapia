@@ -28,6 +28,8 @@ h2{font-size:1.7rem;margin:0 0 .6em}
 .cards{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 2px 10px rgba(0,0,0,.07)}
 .preco{font-family:Arial,sans-serif;font-size:2rem;font-weight:700;color:var(--ouro);margin:.2em 0}
+.perfil{display:flex;gap:28px;align-items:center}
+.perfil img{width:220px;height:220px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 2px 10px rgba(0,0,0,.15)}
 .alt{background:var(--areia)}
 ol.passos{padding-left:1.2em}
 ol.passos li{margin-bottom:.5em}
@@ -37,7 +39,7 @@ summary{cursor:pointer;font-weight:700;color:var(--verde-esc)}
 .contato{text-align:center;font-family:Arial,sans-serif}
 footer{background:var(--verde-esc);color:#e8efe9;padding:36px 0;font-family:Arial,sans-serif;font-size:.9rem;line-height:1.6}
 footer a{color:#fff}
-@media(max-width:700px){.cards{grid-template-columns:1fr}h1{font-size:1.8rem}body{font-size:19px}}
+@media(max-width:700px){.perfil{flex-direction:column;text-align:center}.cards{grid-template-columns:1fr}h1{font-size:1.8rem}body{font-size:19px}}
 </style>
 </head>
 <body>
@@ -58,8 +60,14 @@ footer a{color:#fff}
 
 <section class="alt"><div class="wrap">
   <h2>Quem conduz</h2>
-  <p><strong>Matheus Pupim</strong></p>
-  <p><span class="pend">[Matheus: 3 parágrafos em 1ª pessoa — por que este trabalho, sua experiência real. Não incluir credencial que não exista.]</span></p>
+  <div class="perfil">
+    <img src="perfil.png" alt="Foto de Matheus Pupim" width="250" height="250">
+    <div>
+      <p><strong>Matheus Pupim</strong> é formado em Educação Física, Acupuntura, Constelação Familiar e Coaching.</p>
+      <p>Já atuou como professor de natação em academias e como personal trainer.</p>
+      <p>Há vinte e três anos vem atuando na área do bem-estar, transformando pessoas e famílias com o seu trabalho.</p>
+    </div>
+  </div>
 </div></section>
 
 <section><div class="wrap">
